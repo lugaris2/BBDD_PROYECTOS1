@@ -1,0 +1,25 @@
+POST http://localhost:1026/v2/entities
+Header: Content-Type: "application/json"
+
+{
+    "sensores":[
+    {
+    "id":"sensor_calidad_H2O_1",
+    "tipo":"calidad_H2O",
+    "unidad": "ppm"
+    },
+    {
+    "id":"sensor_co2_1",
+    "nombre": "co2",
+    "unidad": "ppm"
+    },
+    {
+    "id": "sensor_temperatura1",
+    "ph": 7.2,
+    "temperatura": 26.0,
+    "cloro": 1.5
+    }
+
+]
+}
+  

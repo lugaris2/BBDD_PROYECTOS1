@@ -1,0 +1,5 @@
+{
+  "id": "sensor_co2_1",
+  "type": "CO2",
+  "unidad": { "value": "ppm", "type": "Text" }
+}
