@@ -1,0 +1,5 @@
+¿Cuál es el separador de columnas (coma , o punto y coma ;)? punto y coma
+¿La primera fila contiene los nombres de las columnas (encabezados)? ¿Son claros? si, y si, son claros
+Inspecciona visualmente las primeras 20-30 filas. ¿Ves valores que te parezcan extraños o que faltan (celdas vacías, "N/A", "s/d")? claro, modifica las letras con tilde.
+¿Los formatos son consistentes? Por ejemplo, ¿las fechas están siempre como DD/MM/AAAA o a veces cambian? su formato es AAAA/00
+Identifica las "claves" o "IDs" que podrían servir para relacionar unos ficheros con otros (ej: id_alumno en el fichero de calificaciones.csv y también en alumnos.csv).
