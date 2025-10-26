@@ -1,6 +1,6 @@
 {
   "id": "sensor_calidad_H2O_1",
   "type": "CalidadH2O",
-  "fecha_actual":{"value": "","type": "datetime"},
-  "ppm": { "value": "", "type": "Text" }
+  "fecha_actual":{"type": "DateTime"},
+  "ppm": {  "type": "Number" }
 }

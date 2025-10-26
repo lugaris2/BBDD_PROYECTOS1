@@ -1,6 +1,6 @@
 {
   "id": "sensor_co2_1",
   "type": "CO2",
-  "fecha_actual":{"value": "","type": "datetime"},
-  "ppm": { "value": "", "type": "Text" }
+  "fecha_actual":{"type": "DateTime"},
+  "ppm": { "type": "Number" }
 }
