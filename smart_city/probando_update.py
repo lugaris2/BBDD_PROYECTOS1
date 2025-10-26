@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 import random
 import pandas as pd
 import numpy as np
-import time
 
 
 def sensor_temperatura_agua():
@@ -20,9 +19,9 @@ def sensor_temperatura_agua():
     }
 
     i=0
-    fecha_inicio= datetime(2025, 1, 15)
+    fecha_inicio= datetime(2025, 5, 1)
     data_list=[]
-    while i<23:
+    while i<20:
 
         #inicio del for in
         
@@ -32,7 +31,7 @@ def sensor_temperatura_agua():
         cloro= round(random.uniform(0,3),2)
 
         data = {
-            "fecha_actual":{"value": fecha_actual.isoformat(),"type": "datetime"},
+            "fecha_actual":{"value": fecha_actual,"type": datetime},
             "ph": {"value": ph,"type": "Float"},
             "temperatura": { "value": temperatura, "type": "Float" },
             "cloro": { "value": cloro, "type": "Float" }
@@ -51,9 +50,9 @@ def sensor_temperatura_agua():
 
         fecha_inicio += timedelta(days=1)
         i+=1
-        time.sleep(1)
     df_data= pd.DataFrame(data_list)
     print(df_data)
+
 sensor_temperatura_agua()
 
 def sensor_calidad_H2O_1():
@@ -68,9 +67,9 @@ def sensor_calidad_H2O_1():
     }
 
     i=0
-    fecha_inicio= datetime(2025, 1, 15)
+    fecha_inicio= datetime(2025, 5, 1)
     data_list=[]
-    while i<21:
+    while i<20:
 
         #inicio del for in
         
@@ -78,7 +77,7 @@ def sensor_calidad_H2O_1():
         ppm= round(random.uniform(5,9),2)
         
         data = {
-            "fecha_actual":{"value": fecha_actual.isoformat(),"type": "datetime"},
+            "fecha_actual":{"value": fecha_actual,"type": datetime},
             "ppm": {"value": ppm,"type": "Float"},
             
             }
@@ -96,11 +95,10 @@ def sensor_calidad_H2O_1():
 
         fecha_inicio += timedelta(days=1)
         i+=1
-        time.sleep(1)
     df_data= pd.DataFrame(data_list)
     print(df_data)
 
-sensor_calidad_H2O_1()
+
 
 def sensor_co2_1():
 
@@ -114,9 +112,9 @@ def sensor_co2_1():
     }
 
     i=0
-    fecha_inicio= datetime(2025, 1, 15)
+    fecha_inicio= datetime(2025, 5, 1)
     data_list=[]
-    while i<21:
+    while i<20:
 
         #inicio del for in
         
@@ -124,7 +122,7 @@ def sensor_co2_1():
         ppm= round(random.uniform(5,9),2)
         
         data = {
-            "fecha_actual":{"value": fecha_actual.isoformat(),"type": "datetime"},
+            "fecha_actual":{"value": fecha_actual,"type": datetime},
             "ppm": {"value": ppm,"type": "Float"},
             
             }
@@ -142,10 +140,12 @@ def sensor_co2_1():
 
         fecha_inicio += timedelta(days=1)
         i+=1
-
-        time.sleep(1)
-
     df_data= pd.DataFrame(data_list)
     print(df_data)
 
+
+
+
+sensor_calidad_H2O_1()
 sensor_co2_1()
+sensor_temperatura_agua()

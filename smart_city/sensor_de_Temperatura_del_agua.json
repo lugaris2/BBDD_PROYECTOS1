@@ -1,7 +1,8 @@
 {
   "id": "sensor_temperatura1",
   "type": "SensorTemperaturaAgua",
-  "ph": { "value": 7.2, "type": "Float" },
-  "temperatura": { "value": 26.0, "type": "Float" },
-  "cloro": { "value": 1.5, "type": "Float" }
+  "fecha_actual":{"value": "","type": "datetime"},
+  "ph": { "value": "", "type": "Float" },
+  "temperatura": { "value": "", "type": "Float" },
+  "cloro": { "value": "", "type": "Float" }
 }

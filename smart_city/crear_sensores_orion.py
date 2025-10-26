@@ -12,19 +12,22 @@ entidades = [
     {
         "id": "sensor_calidad_H2O_1",
         "type": "CalidadH2O",
-        "unidad": {"value": "ppm", "type": "Text"}
+        "fecha_actual":{"value": "","type": "datetime"},
+        "ppm": { "value": "", "type": "Text" }
     },
     {
         "id": "sensor_co2_1",
         "type": "CO2",
-        "unidad": {"value": "ppm", "type": "Text"}
+        "fecha_actual":{"value": "","type": "datetime"},
+        "ppm": {"value": "", "type": "Text"}
     },
     {
         "id": "sensor_temperatura1",
         "type": "SensorTemperaturaAgua",
-        "ph": {"value": 7.2, "type": "Float"},
-        "temperatura": {"value": 26.0, "type": "Float"},
-        "cloro": {"value": 1.5, "type": "Float"}
+        "fecha_actual":{"value": "","type": "datetime"},
+        "ph": {"value": "", "type": "Float"},
+        "temperatura": {"value": "", "type": "Float"},
+        "cloro": {"value": "", "type": "Float"}
     }
 ]
 
