@@ -36,11 +36,11 @@ for entidad in entidades:
     print(f"Creando {entidad['id']}...")
     response = requests.post(ORION_URL, headers=headers, data=json.dumps(entidad))
     if response.status_code == 201:
-        print(f"✅ Entidad {entidad['id']} creada correctamente.")
+        print(f" Entidad {entidad['id']} creada correctamente.")
     elif response.status_code == 422:
-        print(f"⚠️ Entidad {entidad['id']} ya existe.")
+        print(f" Entidad {entidad['id']} ya existe.")
     else:
-        print(f"❌ Error creando {entidad['id']}: {response.status_code} - {response.text}")
+        print(f" Error creando {entidad['id']}: {response.status_code} - {response.text}")
 
 print("\nConsulta de todas las entidades existentes:")
 consulta = requests.get(ORION_URL)

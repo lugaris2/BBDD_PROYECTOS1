@@ -83,11 +83,11 @@ for suscripcion in suscripciones:
     response = requests.post(ORION_URL, headers=headers, data=json.dumps(suscripcion))
 
     if response.status_code == 201:
-        print("✅ Suscripción creada correctamente.")
+        print(" Suscripción creada correctamente.")
     elif response.status_code == 422:
-        print("⚠️ La suscripción ya existe.")
+        print(" La suscripción ya existe.")
     else:
-        print(f"❌ Error al crear la suscripción: {response.status_code} - {response.text}")
+        print(f" Error al crear la suscripción: {response.status_code} - {response.text}")
 
 # Verificar las suscripciones existentes
 print("\n Suscripciones actuales en Orion:")
